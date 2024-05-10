@@ -1,0 +1,31 @@
+<p>formulaire works!</p>
+<div class="container">
+<form [formGroup]="formreshowrrom">
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">matricule:</span>
+        </div>
+        <input type="text" class="form-control" formControlName="matricule">
+     
+        <div *ngIf="formreshowrrom.get('matricule')!.invalid && formreshowrrom.get('matricule')!.touched && formreshowrrom.get('matricule')?.hasError('pattern')" class="alert alert-danger">
+            matricule is invalid 
+                    </div>
+        
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">nom:</span>
+        </div>
+        <input  type="text" class="form-control" formControlName="nom">
+        <div *ngIf="formreshowrrom.get('nom')?.errors?.['minlength']" class="alert alert-danger">
+            nom is invalid
+        </div>
+    </div>
+
+    <br>
+    <input type="submit" class="btn btn-primary" (click)="add()" [disabled]="formreshowrrom!.invalid">
+
+
+</form>
+</div>
