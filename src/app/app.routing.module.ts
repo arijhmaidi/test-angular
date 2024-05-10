@@ -10,7 +10,7 @@ import { UpdateApartComponent } from './update-apart/update-apart.component';
 import { AddappartmentComponent } from './addappartment/addappartment.component';
 import { ShowappartComponent } from './showappart/showappart.component';
 import { AddshowroomComponent } from './addshowroom/addshowroom.component';
-import { ShowroomComponent } from './aladdineselmi/showroom.component';
+import { ShowroomComponent } from './arijhmaidi/showroom.component';
 import { ShowshowroomComponent } from './showshowroom/showshowroom.component';
 
 

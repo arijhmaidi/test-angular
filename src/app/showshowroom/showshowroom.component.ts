@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ShowrommserviceService } from '../service/showrommservice.service';
-import { showrrom } from '../models/aladdineselmi';
+import { showrrom } from '../models/arijhmaidi';
 
 @Component({
   selector: 'app-showshowroom',

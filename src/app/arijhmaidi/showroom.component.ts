@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { showrrom } from '../models/aladdineselmi';
+
+import { showrrom } from '../models/arijhmaidi';
 import { ShowrommserviceService } from '../service/showrommservice.service';
+
 
 @Component({
   selector: 'app-showroom',
   templateUrl: './showroom.component.html',
   styleUrls: ['./showroom.component.css']
-})
+});
 export class ShowroomComponent {
   listappart:showrrom[]=[]
   constructor(private showroomservice:ShowrommserviceService){
